@@ -1,3 +1,6 @@
+html, body{
+    height: 100%;
+}
 /* NAVBAR SECTION */
 
 #navmenu{ 
@@ -55,29 +58,52 @@
 }
 /* GENERAL PAGE */
 .page{
-    min-height: 100%;
-    margin-right: 20%;
-    width: 80%;
+    min-height: 100%!important;
+    height: 100vh;
+    margin-right: 30%;
+    width: 70%;
+    background: transparent;
+}
+@media (max-width: 768px) {
+    .page {
+      width: 100%;
+      margin-right: 0; } }
+
+.jumbotron{
+    margin-bottom: 0px!important;
+    border-radius: 0px!important;
+    background-color: transparent!important;
 }
 
+.page-title{
+    font-size: 45px;
+}
 /* HOME SECTION */
 .bg_color{
     background: linear-gradient(180deg, #c9e3ff, #2181dc);
     position: relative;
 }
-.home_img{
-    width: 80%;
-    height: 30%;
-    position: relative;
-}
+
 .home-page{
     background: url(/images/IMG_3489.JPG);
+    background-position-x: 61%;
+    background-size: cover;
+}
+
+.hello{
+    color: white;
+    font-size: 70px;
+}
+.blurb{
+    color: #fff;
+    font-size: 25px;
 }
 /* PROJECT SECTION */
 .project_card{
     position: relative;
     width: 300px;
-
+    box-shadow: 10px 10px 20px #000;
+    border-radius: 5px;
 }
 
 .project_img{
