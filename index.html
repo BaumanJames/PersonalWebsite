@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="/css/normalize copy.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src='scripts.js'></script>
+    <script src="https://kit.fontawesome.com/91679be069.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav id="the_nav" class="navbar-expand-md text-left ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>placeholder
+    <nav id="the_nav" class="navbar-expand-md text-left navbar-light">
+        <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse flex-column nav" id="navmenu">
             <p class="nav_name">James Bauman</p>
@@ -37,21 +37,50 @@
             </div>
         </div>
     </nav>
-    <div class="bg_color" data-spy="scroll" data-target="#the_nav" data-offset="0">
+    <div id="container" class="bg_color">
         <a name="home"></a>
         <div id="home" class="page jumbotron home-page">
             <h1 class="hello">Hi! I'm James Bauman</h1>
-           <p class="blurb">Web Developer</p>
+            <p class="blurb">Web Developer</p>
         </div>
         <a name="projects"></a>
         <div id="projects" class="page jumbotron projects-page">
             <h4 class="page-title">Projects</h4>
-            <div id="projectsCont flex-row">
-                <div class="project_card">
-                    <img src="images/calc.png" alt="Calculator" class="project_img">
-                    <div class="project_overlay">
-                        <div class="project_title"><a href="https://baumanjames.github.io/Calculator/" target="_blank">Calculator</a></div>
-                        <p class="project_description">HTML - CSS - Javascript</p>
+            <div id="projectsCont">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 project_card">
+                            <img src="images/calc.png" alt="Calculator" class="project_img">
+                            <div class="project_overlay">
+                                <div class="project_title"><a href="https://baumanjames.github.io/Calculator/"
+                                        target="_blank">Calculator</a></div>
+                                <p class="project_description">HTML - CSS - Javascript</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 project_card">
+                            <img src="images/calc.png" alt="Calculator" class="project_img">
+                            <div class="project_overlay">
+                                <div class="project_title"><a href="https://baumanjames.github.io/Calculator/"
+                                        target="_blank">Calculator</a></div>
+                                <p class="project_description">HTML - CSS - Javascript</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 project_card">
+                            <img src="images/calc.png" alt="Calculator" class="project_img">
+                            <div class="project_overlay">
+                                <div class="project_title"><a href="https://baumanjames.github.io/Calculator/"
+                                        target="_blank">Calculator</a></div>
+                                <p class="project_description">HTML - CSS - Javascript</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 project_card">
+                            <img src="images/calc.png" alt="Calculator" class="project_img">
+                            <div class="project_overlay">
+                                <div class="project_title"><a href="https://baumanjames.github.io/Calculator/"
+                                        target="_blank">Calculator</a></div>
+                                <p class="project_description">HTML - CSS - Javascript</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,11 +88,16 @@
         <a name="skills"></a>
         <div id="skills" class="page jumbotron skills-page">
             <h4 class="page-title">Skills</h4>
-            <p>I'm currently working towards becoming a full time Web Developer. I currently have experience with:</p>
+            <p>I'm constantly trying to grow my repertoire of skills/languages I can use in web development. Here are
+                the ones I currently have experience with:</p>
             <ul id="skillList">
                 <li>HTML</li>
                 <li>CSS</li>
+                <ul>
+                    <li>Bootstrap</li>
+                </ul>
                 <li>Javascript</li>
+                <li>Git</li>
                 <li>Photoshop</li>
                 <li>Excel</li>
             </ul>
@@ -79,17 +113,58 @@
             </div>
             <div id="experience">
                 <h5>Work Experience</h5>
-                <p>Freelance Webdeveloper</p>
-                <p>May 2021 - Present</p>
-                <ul>
-                    <li>completed projects to help learn the different languages</li>
-                </ul>
+                <div>
+                    <p>Freelance Webdeveloper</p>
+                    <p>May 2021 - Present</p>
+                    <ul>
+                        <li>Completed projects to help learn the different languages</li>
+                        <li>Use a variety of tools and languages to develop sites</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Freelance Content Writer</p>
+                    <p>May 2021 - Present</p>
+                    <ul>
+                        <li>Increased site traffic by 10% over the course of the first month by utilizing back-links and
+                            effective SEO strategies.</li>
+                        <li>Conducted research into topics to be able to familiarize myself with the content and write
+                            about it</li>
+                        <li>Worked to deliver interesting and innovative website media content on a weekly basis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="experience">
+                <h5>Work Experience</h5>
+                <div>
+                    <p>Freelance Webdeveloper</p>
+                    <p>May 2021 - Present</p>
+                    <ul>
+                        <li>Completed projects to help learn the different languages</li>
+                        <li>Use a variety of tools and languages to develop sites</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Freelance Content Writer</p>
+                    <p>May 2021 - Present</p>
+                    <ul>
+                        <li>Increased site traffic by 10% over the course of the first month by utilizing back-links and
+                            effective SEO strategies.</li>
+                        <li>Conducted research into topics to be able to familiarize myself with the content and write
+                            about it</li>
+                        <li>Worked to deliver interesting and innovative website media content on a weekly basis
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <a name="contact"></a>
         <div id="contact" class="page jumbotron contact-page">
             <h4 class="page-title">Contact Me!</h4>
-            <div id="formCont">
+            <p>My info:</p>
+            <p>bauman.james98&#64gmail.com</p>
+            <p>&#40&#56&#54&#48&#41&#55&#48&#57&#45&#55&#57&#52&#57</p>
+            <div id="formCont flex-column">
                 <form action="https://formspree.io/f/xeqvnrgy" method="POST">
                     <label>
                         Your email:
@@ -116,6 +191,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
