@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
     scroll-behavior: smooth;
+    
 }
 /* NAVBAR SECTION */
 
@@ -16,6 +17,8 @@ html, body{
     background-color: #ffd9a9;
     align-items: flex-start!important;
     padding-left: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
 }
 @media (max-width: 768px) {
     #navmenu {
@@ -30,7 +33,6 @@ html, body{
 
     
 .nav_name{
-    font-size: 15px;
     line-height: 25px;
     letter-spacing: 5px;
     font-weight: 700;
@@ -41,15 +43,15 @@ html, body{
     padding-top: 35%;
     padding-bottom: 20%;
 }
-
+@media (max-width: 768px){
+    .nav_name{
+        padding-top: 85%;
+    }
+}
 .nav_name:hover{
     color: cornflowerblue;
 }
 
-.nav_ul{
-   
-
-}
 .nav_list{
     list-style: none;
     line-height: 50px;
@@ -68,13 +70,14 @@ html, body{
     position:relative;
     bottom: -15%;
      padding-top: 10%;
-     font-size: 15px;
 }
 /* GENERAL PAGE */
 #container{
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
 }
 .page{
     min-height: 100vh!important;
@@ -97,6 +100,8 @@ html, body{
 
 .page-title{
     font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 /* HOME SECTION */
@@ -114,10 +119,13 @@ html, body{
 .hello{
     color: white;
     font-size: 70px;
+    font-family: 'Cabin', sans-serif;;
+    line-height: inherit;
 }
 .blurb{
     color: #fff;
     font-size: 25px;
+    font-family: 'Cabin', sans-serif;
 }
 /* PROJECT SECTION */
 /* #projectsCont{
@@ -151,7 +159,8 @@ html, body{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, .5);
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,18 +182,40 @@ html, body{
 }
 
 .project_title > *{
-    font-size: 2em;
+    font-size: 2em!important;
     font-weight: bold;
     color: #ffffff;
 }
 
 .project_description{
-    font-size: 1.25em;
+    font-size: 1.2em!important;
     margin-top: .25em;
 }
 
 /* RESUME SECTION */
+#education > h5{
+    font-size: 33px;
+}
 
-/* SKILLS SECTION */
+#experience > h5{
+    font-size: 33px;
+}
+.work{
+    margin-left: 20px;
+}
+.work > h6{
+    font-size: 30px;
+    margin-top: 25px;
+}
 
 /* CONTACT SECTION */
+
+.form-cont{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.form-cont > button{
+    font-style: 'Cabin', Arial;
+}

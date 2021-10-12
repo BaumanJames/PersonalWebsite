@@ -4,13 +4,21 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>James Bauman</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Web development portfolio website of James Bauman">
+    <link rel="icon" href="images/favicon.jpg">
     <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
     <link rel="stylesheet" href="/css/normalize copy.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/91679be069.js" crossorigin="anonymous"></script>
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
 </head>
 
 <body>
@@ -90,17 +98,29 @@
             <h4 class="page-title">Skills</h4>
             <p>I'm constantly trying to grow my repertoire of skills/languages I can use in web development. Here are
                 the ones I currently have experience with:</p>
-            <ul id="skillList">
-                <li>HTML</li>
-                <li>CSS</li>
-                <ul>
-                    <li>Bootstrap</li>
-                </ul>
-                <li>Javascript</li>
-                <li>Git</li>
-                <li>Photoshop</li>
-                <li>Excel</li>
-            </ul>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-offset-0">
+                    <ul id="skillList">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <ul>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <li>CMS</li>
+                        <ul>
+                            <li>Wordpress</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-0">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Git</li>
+                        <li>Photoshop</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <a name="resume"></a>
         <div id="resume" class="page jumbotron resume-page">
@@ -109,44 +129,22 @@
             <div id="education">
                 <h5>Education</h5>
                 <p>University of Connecticut, Storrs CT - BA, Communications</p>
-                <p>lore ipsum</p>
             </div>
             <div id="experience">
                 <h5>Work Experience</h5>
-                <div>
-                    <p>Freelance Webdeveloper</p>
-                    <p>May 2021 - Present</p>
+                <div class="work">
+                    <h6>Freelance Webdeveloper
+                        <br>May 2021 - Present
+                    </h6>
                     <ul>
                         <li>Completed projects to help learn the different languages</li>
                         <li>Use a variety of tools and languages to develop sites</li>
                     </ul>
                 </div>
-                <div>
-                    <p>Freelance Content Writer</p>
-                    <p>May 2021 - Present</p>
-                    <ul>
-                        <li>Increased site traffic by 10% over the course of the first month by utilizing back-links and
-                            effective SEO strategies.</li>
-                        <li>Conducted research into topics to be able to familiarize myself with the content and write
-                            about it</li>
-                        <li>Worked to deliver interesting and innovative website media content on a weekly basis
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="experience">
-                <h5>Work Experience</h5>
-                <div>
-                    <p>Freelance Webdeveloper</p>
-                    <p>May 2021 - Present</p>
-                    <ul>
-                        <li>Completed projects to help learn the different languages</li>
-                        <li>Use a variety of tools and languages to develop sites</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Freelance Content Writer</p>
-                    <p>May 2021 - Present</p>
+                <div class="work">
+                    <h6>Freelance Content Writer
+                        <br>May 2021 - Present
+                    </h6>
                     <ul>
                         <li>Increased site traffic by 10% over the course of the first month by utilizing back-links and
                             effective SEO strategies.</li>
@@ -161,23 +159,29 @@
         <a name="contact"></a>
         <div id="contact" class="page jumbotron contact-page">
             <h4 class="page-title">Contact Me!</h4>
+            <p>Feel free to reach out if you want to work together or for any other reason!</p>
+            <div class="mui-form form-cont">
+                <form action="https://formspree.io/f/xeqvnrgy" method="POST">
+                    <div class="mui-textfield mui-textfield--float-label">
+                        <input type="text">
+                        <label>Name</label>
+                    </div>
+                    <div class="mui-textfield mui-textfield--float-label">
+                        <input type="email" name="_replyto">
+                        <label>Email</label>
+                    </div>
+                    <div class="mui-textfield mui-textfield--float-label">
+                        <textarea name="message"></textarea><label>
+                            Your message
+                        </label>
+                    </div>
+                    <!-- your other form fields go here -->
+                    <button type="submit" class="mui-btn mui-btn--raised">Send</button>
+                </form>
+            </div>
             <p>My info:</p>
             <p>bauman.james98&#64gmail.com</p>
             <p>&#40&#56&#54&#48&#41&#55&#48&#57&#45&#55&#57&#52&#57</p>
-            <div id="formCont flex-column">
-                <form action="https://formspree.io/f/xeqvnrgy" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="_replyto">
-                    </label>
-                    <label>
-                        Your message:
-                        <textarea name="message"></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                </form>
-            </div>
         </div>
     </div>
 
