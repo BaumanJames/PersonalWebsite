@@ -199,13 +199,18 @@ html, body{
 
 #experience > h5{
     font-size: 33px;
+    margin-top: 20px;
 }
 .work{
     margin-left: 20px;
 }
 .work > h6{
     font-size: 30px;
+    font-weight: 600;
     margin-top: 25px;
+}
+.work > li {
+    font-size: 25px;
 }
 
 /* CONTACT SECTION */
